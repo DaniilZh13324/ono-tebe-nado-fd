@@ -16,9 +16,27 @@ h1 {
     font-weight: bold;
     font-size: 100px;
     letter-spacing: 30%;
-    margin: 165px 50px auto 50px;
+    margin-top: 165px;
+    margin-left: 50px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    width: 256px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    margin-top: 105px;
 }
 
 .nav_button {
@@ -28,14 +46,16 @@ h1 {
     width: 391.48px;
     height: 22px;
     text-underline-offset: 4px;
-    margin: 133px auto auto 50px;
+    margin-top: 135px;
+    margin-left: 50px;
     line-height: 100%;
 }
 
 .logo_black {
     width: 148px;
     height: 105px;
-    margin: 92px auto auto 38px;
+    margin-top: 92px;
+    margin-left: 35px;
 }
 
 .contacts_top {
@@ -60,25 +80,31 @@ h1 {
 .title_to_you {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: 30px;
 }
 
 .title_need {
     display: flex;
-    align-items: end;
+    justify-content: flex-end;
+    margin-right: -30px;
 }
 
 .description {
     display: flex;
     justify-content: space-between;
+    margin-left: 50px;
     width: 1000px;
     height: 51px;
     font-family: Raleway;
     font-weight: normal;
     font-size: 22px;
     text-transform: uppercase;
+    word-spacing: 18px;
 }
 
+.underheader {
+    margin-top: 120px;
+}
 .active {
     list-style: none;
 }
