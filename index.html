@@ -20,12 +20,12 @@
               главная
             </a>
           </li>
-          <li class="header__links-list-item header__links-list-item_position-center">
+          <li class="header__links-list-item">
             <a href="#lots">
               посмотреть лоты
             </a>
           </li>
-          <li class="header__links-list-item header__links-list-item_position-end">
+          <li class="header__links-list-item">
             <a href="#about">
               об аукционе
             </a>
@@ -49,6 +49,8 @@
     </header>
     <main>
       <section class="cover">
+        <div class="overlay overlay_cover">
+        </div>
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left">
             ОНО
@@ -71,7 +73,6 @@
             Сделать ставку
           </button>
         </div>
-          <div class="overlay"></div>
       </section>
       <section class="lots" id="lots">
         <h2 class="lots_header">
@@ -79,7 +80,8 @@
         </h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <div class="card card_img_1">
+            <div class="overlay overlay_lots_card"></div>
+            <div class="card card_img card_img_1">
               <a class="lots__heading" href="#">
                 Фильм режиссёра, который бросил киношколу
               </a>
@@ -89,10 +91,10 @@
                 что режиссёр — Пол Томас Андерсон?
               </p>
             </div>
-            <div class="overlay_lots_card"></div>
           </li>
           <li class="lots__card-list-item">
-            <div class="card card_img_2">
+            <div class="overlay overlay_lots_card"></div>
+            <div class="card card_img card_img_2">
               <a class="lots__heading" href="#">
                 Книга, где описан один скучный день из жизни рекламного агента
               </a>
@@ -102,10 +104,10 @@
                   И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                 </p>
             </div>
-            <div class="overlay_lots_card"></div>
           </li>
           <li class="lots__card-list-item">
-            <div class="card card_img_3">
+            <div class="overlay overlay_lots_card"></div>
+            <div class="card card_img card_img_3">
               <a class="lots__heading" href="#">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </a>
@@ -115,7 +117,6 @@
                   что это — одна из революционных работ Кандинского?
               </p>
             </div>
-            <div class="overlay_lots_card"></div>
           </li>
         </ul>
         <article>
