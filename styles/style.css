@@ -255,7 +255,7 @@ address {
 .card_img_1 {
     width: 334px;
     height: 596px;
-    background-image: url(/images/card-lot-01.jpg);
+    background-image: url(/images/card-lot-01.jpg) alt(none);
     background-size: cover;
     background-position: center;
 }
@@ -263,7 +263,7 @@ address {
 .card_img_2 {
     width: 334px;
     height: 596px;
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(/images/card-lot-02.jpg) alt(none);
     background-size: cover;
     background-position: center;
 }
@@ -271,7 +271,7 @@ address {
 .card_img_3 {
     width: 334px;
     height: 596px;
-    background-image: url(/images/card-lot-03.jpg);
+    background-image: url(/images/card-lot-03.jpg) alt(none);
     background-size: cover;
     background-position: center;
 }
