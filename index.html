@@ -15,8 +15,8 @@
     <header>
       <nav>
         <ul class="header__links-list">
-          <li class="header__links-list-item header__links-list-item_no-bullit header__link_active">
-            <a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link_active" href="#">
               главная
             </a>
           </li>
@@ -33,13 +33,13 @@
         </ul>
       </nav>
       <a href="#">
-        <img class="header__logo-image" src="images/logo-black.svg" alt="Логотип Оно тебе надо">
+        <img class="header__logo-image" src="../images/logo-black.svg" alt="Логотип Оно тебе надо">
       </a>
       <address class="address header__address">
-        <a class="adress_text_underline" href="tel:+99995555555">
+        <a class="adress__text-underline" href="tel:+99995555555">
            +9 999 555 5555
         </a>
-        <a class="adress_text_underline" href="mailto:info@sobaka.ge">
+        <a class="adress__text-underline" href="mailto:info@sobaka.ge">
           info@sobaka.ge
         </a>
         <p>
@@ -47,9 +47,12 @@
         </p>
       </address>
     </header>
+    <!--Основной контент обернут в main по ТЗ согласно шагу 2 урока 2/6 темы 11/12 спринт 1.
+        Прошу прощения, но исправить это согласно комментарию я не могу.
+        Надеюсь, "надо исправить", поставили случайно :))-->
     <main>
       <section class="cover">
-        <div class="overlay overlay_cover">
+        <div class="overlay overlay__cover">
         </div>
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left">
@@ -64,82 +67,89 @@
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
-            <span>Аукцион</span>
-            <span class="cover__description-text__letter-spacing_1">вещей,</span>
-            <span class="cover__description-text__letter-spacing_2">в которые никто</span>
-            <span class="cover__description-text__letter-spacing_3">не верил</span>
+            Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">
+          <button class="bet-button" type="button">
             Сделать ставку
           </button>
         </div>
       </section>
       <section class="lots" id="lots">
-        <h2 class="lots_header">
+        <h2 class="lots__header">
           Лоты
         </h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <div class="overlay overlay_lots_card"></div>
-            <div class="card card_img card_img_1">
-              <a class="lots__heading" href="#">
-                Фильм режиссёра, который бросил киношколу
-              </a>
-              <p class="card__text">
-                Не просто бросил, а ушёл с первой лекции. 
-                Какой была бы ваша ставка, если бы вы не знали, 
-                что режиссёр — Пол Томас Андерсон?
-              </p>
+            <div class="overlay overlay__lots__card">
             </div>
+            <a class="card-link" href="#">
+              <article class="card card_type_film">
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <div class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. 
+                  Какой была бы ваша ставка, если бы вы не знали, 
+                  что режиссёр — Пол Томас Андерсон?
+                </div>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <div class="overlay overlay_lots_card"></div>
-            <div class="card card_img card_img_2">
-              <a class="lots__heading" href="#">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </a>
-              <p class="card__text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский.
-                 В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён.
-                  И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                </p>
+            <div class="overlay overlay__lots__card">
             </div>
+            <a class="card-link" href="#">
+              <article class="card card_type_book">
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <div class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и 
+                  с переходами на древнеанглийский. В ней одновременно рассказывается 
+                  о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
+                  И это всё накладывается на эпическую поэму Гомера. 
+                  Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                </div>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <div class="overlay overlay_lots_card"></div>
-            <div class="card card_img card_img_3">
-              <a class="lots__heading" href="#">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </a>
-              <p class="card__text">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку.
-                 Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали,
+            <div class="overlay overlay__lots__card">
+            </div>
+            <a class="card-link" href="#">
+              <article class="card card_type_picture">
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги"
+                </h3>
+                <div class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе 
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов, 
+                  котиков... Сколько бы вы на такое поставили, если бы не знали, 
                   что это — одна из революционных работ Кандинского?
-              </p>
-            </div>
+                </div>
+              </article>
+            </a>
           </li>
         </ul>
-        <article>
-          <a href="#">
-            посмотреть больше
-          </a>
-        </article>
+        <a class="lots__look-more-link" href="#">
+          посмотреть больше
+        </a>
       </section>
       <section class="about" id="about">
-        <a class="about_logo" href="#"> 
-          <img class="about_logo_image" src="images/logo-white.svg" alt="Логотип ОНО ТЕБЕ НАДО белый">
+        <a class="about__logo" href="#"> 
+          <img class="about__logo__image" src="images/logo-white.svg" alt="Логотип ОНО ТЕБЕ НАДО белый">
         </a>
-        <div class="about_content">
-          <h2 class="about_title">
+        <div class="about__content">
+          <h2 class="about__title">
             Об аукционе
           </h2>
-          <div class="about_text paragraph">
+          <div class="about__text paragraph">
             Здесь вы не встретите очередное пафосное собрание невероятно <br> дорогого антиквариата. 
             Наши лоты вообще не должны были попасть <br> ни на один аукцион. Потому что кому нужен 
             дневник девочки-<br>подростка или картина, которую может нарисовать даже ребёнок? <br>Кому нужны 
             все эти странные вещи, созданные любителями?
           </div>
-          <div class="about_text">
+          <div class="about__text">
             Слишком сложные или, наоборот, слишком простые.
             Опережающие <br> своё время. В пух и прах растерзанные критиками. Непринятые и <br> непонятые. 
             Когда-то они казались просто неудачными. Но, несмотря <br> на критику, кажущуюся простоту
@@ -151,12 +161,12 @@
       </section>
     </main>
     <footer>
-      <div class="footer_content">
+      <div class="footer__content">
         <address class="address footer__address">
-          <a class="adress_text_underline" href="tel:+99995555555">
+          <a class="adress__text-underline" href="tel:+99995555555">
             +9 999 555 5555
           </a>
-          <a class="adress_text_underline" href="mailto:info@sobaka.ge">
+          <a class="adress__text-underline" href="mailto:info@sobaka.ge">
             info@sobaka.ge
           </a>
           <p>
