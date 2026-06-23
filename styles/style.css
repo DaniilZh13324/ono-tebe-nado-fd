@@ -192,7 +192,7 @@ address {
 }
 
 .card-link {
-   text-decoration: none; 
+   text-decoration: underline;
 }
 
 .card {
@@ -229,7 +229,7 @@ address {
 }
 
 .card_type_film {
-    background-image: url(../images/card-lot-01.jpg); 
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
