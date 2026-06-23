@@ -229,15 +229,15 @@ address {
 }
 
 .card_type_film {
-    background-image: url(/images/card-lot-01.jpg); 
+    background-image: url(../images/card-lot-01.jpg); 
 }
 
 .card_type_book {
-    background-image: url(/images/card-lot-02.jpg);
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture{
-    background-image: url(/images/card-lot-03.jpg);
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -279,7 +279,6 @@ address {
     row-gap: 22px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    white-space: nowrap;
 }
 
 .about__title {
@@ -287,6 +286,7 @@ address {
 }
 
 .about__text {
+    max-width: 693px;
     grid-column: 1/span 2;
     margin-top: 2px;
     font-weight: normal;
@@ -295,7 +295,8 @@ address {
 }
 
 .paragraph {
-    margin-top: 76px;
+    max-width: 688px;
+    margin-top: 78px;
 }
 
 .footer__content {
@@ -303,6 +304,7 @@ address {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
 .footer__address {
     width: 261px;
     grid-column: 1/2;
