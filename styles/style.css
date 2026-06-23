@@ -119,7 +119,7 @@ address {
     min-height: 757px;
 }
 
-.overlay__lots__card{
+.overlay__lots__card {
     width: 334px;
     min-height: 596px;
     margin-top: 27px;
@@ -236,7 +236,7 @@ address {
     background-image: url(../images/card-lot-02.jpg);
 }
 
-.card_type_picture{
+.card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
 }
 
