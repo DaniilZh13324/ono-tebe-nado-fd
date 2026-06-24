@@ -33,7 +33,7 @@
         </ul>
       </nav>
       <a href="#">
-        <img class="header__logo-image" src="../images/logo-black.svg" alt="Логотип Оно тебе надо">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="Логотип Оно тебе надо">
       </a>
       <address class="address header__address">
         <a class="adress__text-underline" href="tel:+99995555555">
@@ -47,13 +47,8 @@
         </p>
       </address>
     </header>
-    <!--Основной контент обернут в main по ТЗ согласно шагу 2 урока 2/6 темы 11/12 спринт 1.
-        Прошу прощения, но исправить это согласно комментарию я не могу.
-        Надеюсь, "надо исправить", поставили случайно :))-->
     <main>
       <section class="cover">
-        <div class="overlay overlay__cover">
-        </div>
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left">
             ОНО
@@ -73,6 +68,8 @@
             Сделать ставку
           </button>
         </div>
+        <div class="overlay">
+        </div>
       </section>
       <section class="lots" id="lots">
         <h2 class="lots__header">
@@ -80,8 +77,6 @@
         </h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <div class="overlay overlay__lots__card">
-            </div>
             <a class="card-link" href="#">
               <article class="card card_type_film">
                 <h3 class="card__title">
@@ -92,14 +87,16 @@
                   Какой была бы ваша ставка, если бы вы не знали, 
                   что режиссёр — Пол Томас Андерсон?
                 </div>
+                <div class="overlay">
+                </div>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
-            <div class="overlay overlay__lots__card">
-            </div>
             <a class="card-link" href="#">
               <article class="card card_type_book">
+                <div class="overlay">
+                </div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -114,10 +111,10 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <div class="overlay overlay__lots__card">
-            </div>
             <a class="card-link" href="#">
               <article class="card card_type_picture">
+                <div class="overlay">
+                </div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -137,7 +134,7 @@
       </section>
       <section class="about" id="about">
         <div class="about__logo"> 
-          <img class="about__logo__image" src="images/logo-white.svg" alt="Логотип ОНО ТЕБЕ НАДО белый">
+          <img class="about__logo__image" src="./images/logo-white.svg" alt="Логотип ОНО ТЕБЕ НАДО белый">
         </div>
         <div class="about__content">
           <h2 class="about__title">
@@ -150,20 +147,10 @@
             подростка или картина, которую может нарисовать даже ребёнок?
             Кому нужны все эти странные вещи, созданные любителями?
           </p>
-          <!--Ранее в работе использовался white-space:no-wrap;,
-           а перенос слов был реализован чере <br>. Сейчас white-space не задан,
-           соответственно по умолчанию стоит wrap, также у блока указана макс ширина
-           и перенос слов на следующую строку при превышении размеров будет происходить автоматически,
-           в случае добавления контента. 
-           Сейчас <br> используется для текста "НА", потому что текст не выходит за пределы блока и автоматически
-           не переносится. Если уменьшить ширину, чтобы переносилось "На", то "лотов" также уходит
-           на следующую строку, поскольку начинает выходить за пределы заданной макс ширины.
-           Поэтому реализовать перенос "НА" без <br> на след. строку, чтобы сохранить "лотов" на заданной строке, не получается.
-           Надеюсь, сейчас я понял правильно, что именно от меня требовалось))-->
           <p class="about__text">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах 
             растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. 
-            Но, несмотря <br> на критику, кажущуюся простоту или сложность, сейчас без этих лотов 
+            Но, несмотря на&nbsp;критику, кажущуюся простоту или сложность, сейчас без этих лотов 
             невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали 
             верить их создатели. И сейчас эти лоты стали культовыми. 
           </p>
